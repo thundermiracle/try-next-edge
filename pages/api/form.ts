@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 
 export default function form(req: NextRequest) {
   console.log("req.url:", req.url);
-  console.log("req.query:", req.referrer);
+  console.log("req:", JSON.stringify(req));
   return NextResponse.json({
     domain: "joinsure-dev-portal.jp.auth0.com",
     clientId: "LTGqM8sO4K6ZUzsViFTVeHNRn4ecCZBa",
